@@ -143,8 +143,8 @@ TABLE_DEF
 
 400.times{class_table.make_entry}
 
-3.times do |section|
-    class_table.add_entry({:cnum => 'CS348', :term => 'F2011', :section => section}.merge(prof_ref.generate))
+4.times do |section|
+    class_table.add_entry({:cnum => 'CS348', :term => 'F2011', :section => section+1}.merge(prof_ref.generate))
 end
 
 class_table.primary_key(:cnum, :term, :section)
