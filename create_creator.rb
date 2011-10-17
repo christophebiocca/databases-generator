@@ -104,7 +104,7 @@ puts(course.create_statement)
 last_names = %w(Weddell Ilyas Baranov Ng Price Raval Smith Jones Gomez Gross)
 first_names = %w(Grant Bob Joe Fred Melvin Roger Peter KillBot)
 
-professor = Table.new(:professor, <<TABLE_DEF, [Field.index([:pnum]), Field.combinator(:pname, ["%s, %s"], last_names, first_names), Field.combinator(:office, %w[MC%s DC%s RCH%s DWE%s], [1023, 780, 345, 932, 221, 1411, 442, 121]), Field.combinator(:dept, ["Computer Science", "Environment", "Philosophy", "Arts"])])
+professor = Table.new(:professor, <<TABLE_DEF, [Field.index([:pnum]), Field.combinator(:pname, ["%s, %s"], last_names, first_names), Field.combinator(:office, %w[MC%s DC%s RCH%s DWE%s], [1023, 780, 345, 932, 221, 1411, 442, 121]), Field.combinator(:dept, ["Computer Science", "Environment", "Philosophy", "Arts", "Pure Math"])])
 pnum        integer not null,
 pname       varchar(20) not null,
 office      varchar(10) not null,
