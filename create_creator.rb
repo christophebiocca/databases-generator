@@ -112,7 +112,7 @@ dept        varchar(30) not null,
 primary key (pnum)
 TABLE_DEF
 
-20.times{professor.make_entry}
+35.times{professor.make_entry}
 
 prof_ref = Field.table_sampler(professor, [:pnum])
 
