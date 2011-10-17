@@ -1,0 +1,9 @@
+Usage instructions:
+
+you probably need ruby 1.9.2 to run this
+
+ruby1.9.2 create_creator.rb > create.sql
+
+Then
+
+db -f create.sql
